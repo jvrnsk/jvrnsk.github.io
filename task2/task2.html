@@ -1,75 +1,74 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Задание 2 WEB. Жайворонская 21/1</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
+  
   <header>
-    <div class="container">
-      <div class="logo">
-        <img src="logo.jpg" alt="Логотип" id="photo">
-        <h1 id="site-name">Жайворонская Таисия</h1>
-      </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="task2.html">Главная</a></li>
-          <li><a href="#links">Гиперссылки</a></li>
-          <li><a href="#table">Таблица</a></li>
-          <li><a href="#form">Форма</a></li>
-        </ul>
-      </nav>
+  <div class="container header-flex">
+    <div class="logo">
+      <img id="photo" src="logo.jpg" alt="Логотип">
+      <h1 id="site-name">Жайворонская Таисия</h1>
     </div>
-  </header>
+    <nav>
+      <ul class="menu">
+        <li><a href="#top">Главная</a></li>
+        <li><a href="#links">Гиперссылки</a></li>
+        <li><a href="#table">Таблица</a></li>
+        <li><a href="#form">Форма</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <main class="container">
+  <div class="container">
     <h2 id="links">Гиперссылки</h2>
-
     <ul>
-      <li><a href="http://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
-      <li><a href="https://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе https</a></li>
+      <li><a href="http://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+      <li><a href="https://kubsu.ru">Абсолютная гиперссылка в протоколе https</a></li>
       <li>
-        <a href="https://kubsu.ru/">
+        <a href="https://kubsu.ru">
           <img src="https://avatars.mds.yandex.net/i?id=8b25546781ae3c214d2422f8e1a9763bf75040bd-4120868-images-thumbs&n=13"
-               alt="Ссылка-изображение" width="200" height="200">
+               alt="Ссылка-изображение" width="300" height="300">
         </a>
       </li>
-      <li><a href="task2.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+      <li><a href="task2.html">Сокращённая ссылка на внутреннюю страницу</a></li>
       <li><a href="/">Сокращённая ссылка на главную страницу</a></li>
-      <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
-      <li><a href="/task2.html?size=m&color=black&page=1">Ссылка с тремя параметрами в URL</a></li>
-      <li><a href="/task2.html?id=123">Ссылка с параметром id в URL</a></li>
-      <li><a href="./task2.html">Относительная ссылка на страницу в текущем каталоге</a></li>
-      <li><a href="about/aboutus.html">Относительная ссылка на страницу в каталоге about</a></li>
-      <li><a href="../task2.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
-      <li><a href="../../task2.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+      <li><a href="#a1">Ссылка на фрагмент текущей страницы</a></li>
+      <li><a href="/task2?size=m?color=black?page=1">Ссылка с тремя параметрами</a></li>
+      <li><a href="/task2?id=id">Ссылка с параметром id</a></li>
+      <li><a href="./task2.html">Относительная ссылка в текущем каталоге</a></li>
+      <li><a href="/about/aboutus.html">Относительная ссылка в каталоге about</a></li>
+      <li><a href="../task2.html">Относительная ссылка уровнем выше</a></li>
+      <li><a href="../../task2.html">Относительная ссылка двумя уровнями выше</a></li>
+      <li><a href="#a1">Контекстная ссылка</a> в тексте абзаца</li>
+      <li><a href="https://www.kubsu.ru/ru/node/2650">Ссылка на фрагмент стороннего сайта</a></li>
       <li>
-        Контекстная ссылка: <p>Эта <a href="#fragment">ссылка</a> встроена в текст абзаца.</p>
-      </li>
-      <li><a href="https://www.kubsu.ru/ru/node/2650#main-content">Ссылка на фрагмент страницы стороннего сайта</a></li>
-      <li>
-        Ссылки из областей картинки (map):
+        Ссылки из областей картинки:
         <img src="https://rus.team/images/article/20446/2019-07-29-294_43299-1_146855.webp"
-             alt="Картинка с областями" width="250" height="100" usemap="#map">
+             alt="Картинка с областями" height="100" width="250" usemap="#map">
         <map name="map">
-          <area shape="circle" coords="75,50,40" href="left.html" alt="Круг" />
-          <area shape="rect" coords="150,0,250,100" href="right.html" alt="Прямоугольник" />
+          <area shape="circle" coords="75,75,75" href="left.html">
+          <area shape="rect" coords="150,0,250,100" href="right.html">
+          <area shape="circle" coords="100,100,50" href="https://ya.ru">
         </map>
       </li>
       <li><a href="">Ссылка с пустым href</a></li>
       <li><a>Ссылка без href</a></li>
-      <li><a href="/no-follow" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
-      <li><!--noindex--><a href="/no-index">Запрещенная для индексации</a><!--/noindex--></li>
+      <li><a href="/no-follow" rel="nofollow">Ссылка с nofollow</a></li>
+      <li><a href="/no-index" rel="noindex">Ссылка с noindex</a></li>
       <li>
-        Нумерованный список ссылок с title:
+        Нумерованный список ссылок:
         <ol>
-          <li><a href="/link1" title="Подсказка к ссылке 1">Ссылка 1</a></li>
-          <li><a href="/link2" title="Подсказка к ссылке 2">Ссылка 2</a></li>
-          <li><a href="/link3" title="Подсказка к ссылке 3">Ссылка 3</a></li>
+          <li><a href="/link1" title="Первая">Ссылка 1</a></li>
+          <li><a href="/link2" title="Вторая">Ссылка 2</a></li>
+          <li><a href="/link3" title="Третья">Ссылка 3</a></li>
         </ol>
       </li>
-      <li><a href="ftp://user:password@example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+      <li><a href="ftp://user:password@example/file.txt">Ссылка на файл FTP с авторизацией</a></li>
     </ul>
 
     <h2 id="table">Таблица</h2>
@@ -80,57 +79,113 @@
           <th>Существительные</th>
           <th>Глаголы</th>
           <th>Прилагательные</th>
-          <th colspan="2">Наречия (объединение)</th>
+          <th>Наречия</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Wonder</td><td>Allow</td><td>Private</td><td>Rather</td><td>Quickly</td>
+          <td>Wonder (чудо)</td>
+          <td>Allow (разрешать)</td>
+          <td>Private (личный)</td>
+          <td>Rather (довольно)</td>
         </tr>
         <tr>
-          <td>Flame</td><td>Manage</td><td>Smart</td><td colspan="2">Hardly</td>
+          <td>Flame (пламя)</td>
+          <td>Manage (суметь)</td>
+          <td>Smart (умный)</td>
+          <td>Hardly (едва)</td>
         </tr>
         <tr>
-          <td>Camp</td><td>Pour</td><td>Tight</td><td>By</td><td>Slowly</td>
+          <td>Camp (лагерь)</td>
+          <td>Pour (наливать)</td>
+          <td>Tight (тугой)</td>
+          <td>By (мимо)</td>
         </tr>
         <tr>
-          <td>Wing</td><td>Shine</td><td>Proud</td><td colspan="2">Toward</td>
+          <td>Wing (крыло)</td>
+          <td>Shine (сиять)</td>
+          <td>Proud (гордый)</td>
+          <td>Toward (около)</td>
         </tr>
         <tr>
-          <td>Tongue</td><td>Protect</td><td>Honest</td><td>Softly</td><td>Gently</td>
+          <td>Tongue (язык)</td>
+          <td>Protect (защищать)</td>
+          <td>Honest (честный)</td>
+          <td>Softly (мягко)</td>
         </tr>
         <tr>
-          <td>Folk</td><td>Tie</td><td>Awake</td><td>High</td><td>Deeply</td>
+          <td>Folk (народ)</td>
+          <td>Tie (связывать)</td>
+          <td>Awake (бодрый)</td>
+          <td>High (высоко)</td>
         </tr>
       </tbody>
     </table>
 
     <h2 id="form">Форма</h2>
-    <form action="/" method="post">
-      <label>ФИО:<br><input type="text" name="fio" required></label><br><br>
-      <label>Телефон:<br><input type="tel" name="tel"></label><br><br>
-      <label>Email:<br><input type="email" name="email"></label><br><br>
-      <label>Дата рождения:<br><input type="date" name="birthdate"></label><br><br>
-      <span>Пол:</span><br>
-      <label><input type="radio" name="gender" value="male"> Мужской</label>
-      <label><input type="radio" name="gender" value="female"> Женский</label><br><br>
-      <label>Любимый язык программирования:<br>
-        <select name="languages[]" multiple>
-          <option>Pascal</option><option>C</option><option>C++</option>
-          <option>JavaScript</option><option>PHP</option><option>Python</option>
-          <option>Java</option><option>Haskell</option><option>Clojure</option>
-          <option>Prolog</option><option>Scala</option>
+    <form action="/" method="POST">
+      <label>
+        ФИО:<br>
+        <input name="name" placeholder="Введите ваше ФИО">
+      </label><br>
+
+      <label>
+        Номер телефона:<br>
+        <input name="tel" type="tel" placeholder="Введите номер телефона">
+      </label><br>
+
+      <label>
+        Email:<br>
+        <input name="email" type="email" placeholder="Введите ваш email">
+      </label><br>
+
+      <label>
+        Дата рождения:<br>
+        <input name="date" value="2025-01-01" type="date">
+      </label><br>
+
+      <label>
+        Пол: 
+        <input type="radio" name="gender" value="male"> Мужской
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female"> Женский
+      </label><br>
+
+      <label>
+        Любимый язык программирования:<br>
+        <select name="language" multiple>
+          <option selected>Pascal</option>
+          <option>C</option>
+          <option>C++</option>
+          <option>JavaScript</option>
+          <option>PHP</option>
+          <option>Python</option>
+          <option>Java</option>
+          <option>Haskell</option>
+          <option>Clojure</option>
+          <option>Prolog</option>
+          <option>Scala</option>
         </select>
-      </label><br><br>
-      <label>Биография:<br><textarea name="bio" rows="5" cols="40"></textarea></label><br><br>
-      <label><input type="checkbox" name="contract" required> С контрактом ознакомлен(а)</label><br><br>
+      </label><br>
+
+      <label>
+        Биография:<br>
+        <textarea name="bio" placeholder="Напишите о себе"></textarea>
+      </label><br>
+
+      <label>
+        <input type="checkbox" checked name="confirm">
+        С контрактом ознакомлен(а)
+      </label><br>
+
       <input type="submit" value="Сохранить">
     </form>
-  </main>
+  </div>
 
-    <footer>
+  <footer>
     <div class="container">
-      <p>© 2025 Жайворонская Таисия. Все права защищены.</p>
+      © 2025 Жайворонская Таисия
     </div>
   </footer>
 </body>
