@@ -30,9 +30,15 @@ header .logo {
   font-size: 20px;
   margin: 0;
 }
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 nav {
   margin-top: 10px;
+  background: #2A4F80;
 }
 .menu {
   list-style: none;
