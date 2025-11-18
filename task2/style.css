@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -122,4 +122,5 @@ footer {
   padding: 15px 0;
   margin-top: 20px;
 }
+
 
