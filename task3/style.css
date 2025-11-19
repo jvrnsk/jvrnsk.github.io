@@ -166,7 +166,7 @@ footer {
     order: 1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .header-flex {
         flex-direction: row !important;
         justify-content: space-between;
@@ -194,3 +194,4 @@ footer {
     }
 
 }
+
