@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Title and SEO -->
+		<title>CodeKids School</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+		<link rel="stylesheet" href="./css/main.css">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicons/site.webmanifest">
+		<link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="./img/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="./img/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+	</head>
+	<body>
+		<div class="header-top">
+			<div class="container container--big">
+				<div class="header-top__wrapper">
+					<div class="logo">
+						<a href="index.html">
+							<svg class="svg-logo">
+								<use href="./img/svgSprite.svg#svg-logo"></use>
+							</svg>
+						</a>
+					</div>
+					<nav class="header-nav">
+						<ul class="header-nav__list">
+							<li><a href="#info">О школе</a></li>
+							<li><a href="#coaches">Преподаватели</a></li>
+							<li><a href="#package">Стоимость</a></li>
+						</ul>
+					</nav>
+					<div class="number">
+						<a href="tel:+78000001122">+7 800 000 11 22</a>
+					</div>
+					<div class="mobile-wrapper">
+						<a class="mobile-button" href="tel:+78000001122">
+							<svg class="svg-mobile">
+								<use href="./img/svgSprite.svg#svg-mobile"></use>
+							</svg>
+						</a>
+						<button class="toggle-menu" id="toggle-menu">
+							<span class="toggle-menu__middle"></span>
+						</button>
+					</div>
+					<div class="header-menu" id="header-menu">
+						<ul class="header-menu__content">
+							<li><a href="#info">О школе</a></li>
+							<li><a href="#coaches">Преподаватели</a></li>
+							<li><a href="#package">Стоимость</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="container">
+				<div class="header__main">
+					<div class="header__main-text">
+						<h1 class="heading-1">CODEKIDS SCHOOL</h1>
+						<p class="text-subtitle">Курсы программирования для детей от 7 до 14 лет с нуля до первых проектов</p>
+						<div class="header__main-img-mobile">
+							<img src="./img/header/header-mobile-image.png" alt="Header mobile">
+						</div>
+						<a href="#sign-up" class="button">Записаться на курс</a>
+					</div>
+					<div class="header__main-img">
+						<img src="./img/header/header-image.png" alt="Header">
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="info" id="info">
+				<div class="container">
+					<h2 class="heading-2 visually-hidden">Информация</h2>
+					<div class="info__description">
+						<p><span>CodeKids School</span> &ndash; современная школа для обучения детей программированию, разработке игр и веб-проектов</p>
+					</div>
+					<div class="info__wrapper">
+						
+						<div class="info-items">
+							<span>8</span>
+							<p>Направлений обучения: от Scratch до Python</p>
+						</div>
+						
+
+						
+						<div class="info-items">
+							<span>25</span>
+							<p>Школ-партнёров по всей стране</p>
+						</div>
+						
+
+						
+						<div class="info-items">
+							<span>150</span>
+							<p>Преподавателей, прошедших нашу сертификацию</p>
+						</div>
+						
+
+						
+						<div class="info-items">
+							<span>5000</span>
+							<p>Детей, успешно завершивших наши курсы</p>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+
+			<section class="receive">
+				<div class="container">
+					<div class="receive__title">
+						<h2 class="heading-2">Что получит ваш ребёнок после курса</h2>
+					</div>
+					<div class="receive__wrapper">
+						
+						<div class="receive-item">
+							<div class="heading-4">Сертификат</div>
+							<p>Подтверждающий освоение основ программирования и возможность участия в IT-олимпиадах</p>
+						</div>
+						
+
+						
+						<div class="receive-item">
+							<div class="heading-4">Навыки</div>
+							<p>По созданию собственных игр, сайтов и приложений на популярных языках программирования</p>
+						</div>
+						
+
+						
+						<div class="receive-item">
+							<div class="receive-item__wrapper">
+								<div class="heading-4">Портфолио</div>
+							</div>
+							<p>Готовые проекты для будущей учёбы <br> и старта в IT-профессии</p>
+							<div class="receive-info">
+								<span>Проекты публикуются в нашем сообществе</span>
+							</div>
+						</div>
+							
+					</div>
+				</div>
+			</section>
+
+			<section class="coaches" id="coaches">
+				<div class="container">
+					<div class="coaches__title">
+						<h2 class="heading-2">Наши преподаватели</h2>
+					</div>
+				</div>
+				<div class="container--right">
+					<div class="coaches__wrapper">
+						<div class="swiper">
+							<div class="swiper-wrapper smooth-transition">
+								<div class="swiper-slide">
+									<div class="coaches-item">
+										<div class="coaches-item__image">
+											<img src="./img/coach/01.jpg" alt="Coach 1">
+										</div>
+										<div class="coaches-item__description">
+											<div class="heading-4">Анна Кодова</div>
+											<p>преподаватель по Scratch и игровой разработке</p>
+											<button class="link" data-micromodal-trigger="modal-1">Подробнее</button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="coaches-item">
+										<div class="coaches-item__image">
+											<img src="./img/coach/02.jpg" alt="Coach 1">
+										</div>
+										<div class="coaches-item__description">
+											<div class="heading-4">Ольга Вебова</div>
+											<p>преподаватель по Python и веб-разработке</p>
+											<button class="link" data-micromodal-trigger="modal-2">Подробнее</button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="coaches-item">
+										<div class="coaches-item__image">
+											<img src="./img/coach/03.jpg" alt="Coach 1">
+										</div>
+										<div class="coaches-item__description">
+											<div class="heading-4">Дмитрий Алгоритмов</div>
+											<p>преподаватель по HTML/CSS и JavaScript</p>
+											<button class="link" data-micromodal-trigger="modal-3">Подробнее</button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="coaches-item">
+										<div class="coaches-item__image">
+											<img src="./img/coach/04.jpg" alt="Coach 1">
+										</div>
+										<div class="coaches-item__description">
+											<div class="heading-4">Иван Прогеров</div>
+											<p>преподаватель по мобильной разработке</p>
+											<button class="link" data-micromodal-trigger="modal-4">Подробнее</button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="coaches-item">
+										<div class="coaches-item__image">
+											<img src="./img/coach/05.jpg" alt="Coach 1">
+										</div>
+										<div class="coaches-item__description">
+											<div class="heading-4">Елена Девова</div>
+											<p>преподаватель по гейм-дизайну</p>
+											<button class="link" data-micromodal-trigger="modal-5">Подробнее</button>
+										</div>
+									</div>
+								</div>
+							</div>					
+						</div>
+						<div class="scrollbar"></div>
+						<div class="button-slider">
+							<button id="sliderPrev">
+								<svg class="arrow-left">
+									<use href="./img/svgSprite.svg#arrow-left"></use>
+								</svg>
+							</button>
+							<button id="sliderNext">
+								<svg class="arrow-right">
+									<use href="./img/svgSprite.svg#arrow-right"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="package" id="package">
+				<div class="container">
+					<div class="package__title">
+						<h2 class="heading-2">Выберите <br> подходящий курс</h2>
+					</div>
+					<div class="package__wrapper">
+						
+						<div class="package-item package-item--dark">
+							<div class="package-item__title">– FULLSTACK –</div>
+							<div class="package-item__price">25.000 &#8381;</div>
+							<div class="package-item__description">Полный курс: от Scratch до веб-разработки</div>
+							<div class="package-item__button">
+								<a href="#sign-up" class="button">Оставить заявку</a>
+							</div>
+						</div>
+						
+						
+						<div class="package-item">
+							<div class="package-item__title">– GAME DEV –</div>
+							<div class="package-item__price">18.000 &#8381;</div>
+							<div class="package-item__description">Разработка игр на Scratch и Python</div>
+							<div class="package-item__button">
+								<a href="#sign-up" class="button">Оставить заявку</a>
+							</div>
+						</div>
+						
+						<div class="package-item">
+							<div class="package-item__title">– WEB START –</div>
+							<div class="package-item__price">14.000 &#8381;</div>
+							<div class="package-item__description">Основы HTML, CSS и JavaScript</div>
+							<div class="package-item__button">
+								<a href="#sign-up" class="button">Оставить заявку</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+
+			<section class="sign-up" id="sign-up">
+				<div class="container">
+					<h2 class="heading-2 visually-hidden">Запись на курс</h2>
+					<div class="sign-up__wrapper">
+						<div class="sign-up__action">
+							<div class="heading-3">Запишитесь на пробный урок бесплатно</div>
+							<div class="sign-up__action-description">
+								<p>Предложение действует до 15 апреля 2025 года</p>
+							</div>
+						</div>
+						<div class="sign-up__form">
+							<form class="form">
+								<input type="text" class="form-input" placeholder="Имя ребёнка" required>
+								<input type="tel" class="form-input" placeholder="Телефон родителя" required>
+								<input type="email" class="form-input" placeholder="E-mail" required>
+								<button type="submit" class="button-form">Записаться на пробный урок</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container container--big">
+				<div class="footer__wrapper">
+					<div class="logo">
+						<a href="index.html">
+							<svg class="svg-logo svg-logo--footer">
+								<use href="./img/svgSprite.svg#svg-logo"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="number number--footer">
+						<a href="tel:+78000001122">+7 800 000 11 22</a>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					&copy; CODEKIDS.SCHOOL
+				</div>
+			</div>
+		</footer>
+
+
+
+		<!-- Libs -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./libs/jquery/jquery-3.7.1.min.js"></script>
+		<!-- Custom JS -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>
